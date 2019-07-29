@@ -1,5 +1,10 @@
 # Alfred API - Changelog
 
+## 1.20.1 
+### Added
+### Changed
+* [ALFREDAPI-380](https://xenitsupport.jira.com/browse/ALFREDAPI-380): Disable archiving of Jenkins artefacts
+### Fixed
 
 ## 1.20.0 (unreleased)
 

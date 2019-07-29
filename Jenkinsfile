@@ -22,10 +22,8 @@ def BuildVersionX(publishingRepo, version) {
     // Publishing
     if (publishingRepo) {
         sh "${gradleCommand} ${implProject}:ampde ${implProject}:publishMavenJavaPublicationTo${publishingRepo}Repository"
-        archiveArtifacts artifacts: '**/build/libs/**/*.jar', excludes: null
         
         sh "${gradleCommand} ${implProject}:ampde ${implProject}:publishAmpPublicationTo${publishingRepo}Repository"
-        archiveArtifacts artifacts: '**/build/distributions/*.amp', excludes: null
     }
 }
 
